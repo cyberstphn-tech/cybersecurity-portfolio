@@ -1,0 +1,89 @@
+# Nmap Network Scan Lab
+
+## Overview
+This project demonstrates how I used Nmap in a controlled lab environment to identify live hosts, discover open ports, and enumerate running services. The purpose of this lab was to practice reconnaissance and improve my ability to document technical findings like a cybersecurity analyst.
+
+---
+
+## Objective
+- Identify live systems in a lab environment
+- Discover open ports on the target machine
+- Detect running services and versions
+- Document findings and possible risks
+
+---
+
+## Tools Used
+- Kali Linux
+- Nmap
+
+---
+
+## Lab Environment
+This lab was performed in a safe and authorized practice environment for learning purposes only.
+
+---
+
+## Commands Used
+
+### Host Discovery
+```bash
+nmap -sn 192.168.1.0/24
+
+## Basic Port Scan
+------------------
+nmap 192.168.1.10
+
+## Service Version Detection
+-----------------
+nmap -sV 192.168.1.10
+
+## Aggressive Scan
+----------------
+nmap -A 192.168.1.10
+
+## Full TCP Port Scan
+-------------------
+nmap -p- 192.168.1.10
+
+## Explanation
+
+I started with host discovery to identify active systems in the network range. After finding a live host, I performed a basic Nmap scan to check for open ports. I then used version detection and aggressive scanning to gather more details about services running on the target.
+
+This process helped me understand how exposed services can become part of an organization’s attack surface.
+
+## Sample Findings
+
+Port 22 open — SSH
+
+Port 80 open — HTTP
+
+Port 443 open — HTTPS
+
+## Detected service versions on open ports
+
+Confirmed that multiple services were externally reachable in the lab
+
+## Security Observation
+
+Open ports and exposed services increase attack surface. Even when a service is legitimate, it should be reviewed to confirm whether it is necessary, securely configured, and properly patched.
+
+## Recommendation
+
+Close unused ports
+
+Limit unnecessary public exposure
+
+Update vulnerable services
+
+Monitor externally facing systems regularly
+
+Perform periodic scanning as part of security hygiene
+
+## Outcome
+
+This lab improved my understanding of reconnaissance, port enumeration, and how to present technical findings in a clear analyst-style format.
+
+## Disclaimer
+
+This project was completed in a safe lab environment for educational and defensive cybersecurity practice only.
