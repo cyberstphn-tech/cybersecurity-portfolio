@@ -97,5 +97,5 @@ I am seeking opportunities as a Cybersecurity Analyst, SOC Analyst, or Cybersecu
 # Contact
 
 Email: cyberstphn@gmail.com  
-LinkedIn: https://linkedin.com/in/ stephen-abioye-871a283a5 
+LinkedIn: https://linkedin.com/in/stephen-abioye-871a283a5 
 GitHub: https://github.com/cyberstphn-tech
